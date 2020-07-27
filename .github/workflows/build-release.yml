@@ -96,7 +96,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ UPLOAD_URL }}
+          upload_url: $UPLOAD_URL
           asset_path: ${{ matrix.platform }}-redis_migrator
           asset_name: ${{ matrix.platform }}-redis_migrator
-          asset_content_type: ${{ CONTENT_TYPE }}
+          asset_content_type: $CONTENT_TYPE
