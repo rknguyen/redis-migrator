@@ -40,7 +40,7 @@ jobs:
 
   make_release:
     needs: build-binary
-    name: Release
+    name: Make release
     runs-on: ubuntu-latest
     steps:
       - name: Make release
@@ -64,7 +64,7 @@ jobs:
           path: upload_url.txt
 
   release:
-    needs: build-binary
+    needs: make_release
     strategy:
       matrix:
         go-version: [1.14.x]
