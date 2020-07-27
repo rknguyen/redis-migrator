@@ -1,0 +1,13 @@
+old:
+  host: localhost
+  port: 6380
+  password:
+  database_index: 0
+
+new:
+  host: localhost
+  port: 6379
+  password:
+  database_index: 12
+
+thread_num: 10
