@@ -40,8 +40,8 @@ jobs:
 
   make_release:
     needs: build-binary
-      name: Release
-      runs-on: ubuntu-latest
+    name: Release
+    runs-on: ubuntu-latest
 
     - name: Make release
       id: create_release
